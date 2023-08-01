@@ -1,0 +1,84 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: auto;
+  background-color: #f4eaff65;
+}
+
+.namePage {
+  font-size: 25px;
+  font-weight: 150;
+  line-height: 1;
+  font-family: cursive;
+  letter-spacing: 1px;
+  background: linear-gradient(to right, #ff00ff, #00ffea);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-radius: 20px;
+  animation: shimmer 2s linear infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.btnTask {
+  display: flex;
+  gap: 1rem;
+}
+
+.btnTask a {
+  text-decoration: none;
+  color:#b500ec;
+}
+
+.btnAdd,
+.btnEndedTask {
+  padding: 0.5rem 1rem;
+  border: 1px solid #c300ff;
+  background-size: 200% 200%;
+  background-color: #e1c5ff65;
+  font-family: cursive;
+  cursor: pointer;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.btnAdd:active,
+.btnEndedTask:active {
+  background-size: 100% 100%;
+  background: linear-gradient(to right, #ff00ffa1, #00ffea9b);
+  border: 1px solid transparent;
+}
+
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .namePage {
+    font-size: 1.2rem;
+  }
+
+  .btnTask {
+    flex-direction: column;
+  }
+
+  .btnTask button {
+    width: 100%;
+  }
+}

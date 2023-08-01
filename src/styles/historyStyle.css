@@ -1,0 +1,66 @@
+.history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nameHistory {
+  font-size: 1.6rem;
+  font-weight: bolder;
+  color: #b500ec;
+  font-family: cursive;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem; /* Add margin to create space between the title and tasks */
+}
+
+.batnBack {
+  margin-left: 1rem; /* Reduce the margin for the back button */
+  border: 1px solid #c300ff;
+  background-size: 200% 200%;
+  background-color: #e1c5ff65;
+  font-family: cursive;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 13px;
+  color: #b500ec;
+  text-decoration: none;
+}
+
+.btnBack:active {
+  background-size: 100% 100%;
+  background: linear-gradient(to right, #ff00ffa1, #00ffea9b);
+  border: 1px solid transparent;
+  color: white;
+}
+.text {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+p{
+    font-family: cursive;
+    font-size: 2rem;
+    color:#c300ff;
+}
+
+.task-item {
+  border: 1px solid #c300ff;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .task-container {
+    grid-template-columns: 1fr;
+  }
+}

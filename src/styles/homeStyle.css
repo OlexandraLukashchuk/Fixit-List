@@ -1,0 +1,120 @@
+.home {
+    padding: 1rem;
+    margin: auto;
+    background-color: #f4eaff65;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-container {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #c300ff;
+    border-radius: 10px;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.search input[type="text"] {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 13px;
+    font-size: 1rem;
+    font-family: cursive;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.task-container {
+    width: 100%;
+   
+    flex-direction: column;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #f4eaff65;
+}
+
+.task-item {
+    border: 1px solid #c300ff;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    margin-bottom: 1rem;
+}
+
+.task-item input {
+    margin-right: 1rem;
+}
+
+.task-item h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-family: cursive;
+}
+
+.task-item p {
+    font-size: 1rem;
+    margin: 0;
+    font-family: cursive;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.button-container {
+    display: flex;
+    gap: 1rem;
+    margin-left: auto;
+}
+
+.button-container button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #c300ff;
+    background-size: 200% 200%;
+    background-color: #e1c5ff65;
+    color: #c300ff;
+    font-family: cursive;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 13px;
+}
+
+.button-container button:active {
+    background-size: 100% 100%;
+    background: linear-gradient(to right, #ff00ffa1, #00ffea9b);
+    border: 1px solid transparent;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .task-container {
+        grid-template-columns: 1fr;
+    }
+}
